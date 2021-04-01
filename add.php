@@ -69,6 +69,6 @@ include("tpl/header.php")
         <input type="submit" value="Valider" class="formsubmit">
     </form>
 </div>
-</body>
-
-</html>
+<?php
+include("tpl/footer.php")
+?>

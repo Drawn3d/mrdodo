@@ -6,7 +6,7 @@ create table lit(
 id smallint primary key auto_increment,
 name varchar(50) not null,
 marque varchar(50) not null,
-prix tinyint not null,
+prix decimal(6,2) not null,
 image varchar(500) not null,
 promo tinyint(3)
 );
@@ -19,12 +19,12 @@ taille varchar(50)
 insert into lit
 (name, marque, prix, image)
 values
-("Tamoul", "EPEDA","759.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
-("Waldorf", "DREAMWAY", "809.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
-("Joris", "BULTEX", "759.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
-("Melon", "EPEDA", "1019.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
-("RevDoux", "DORSOLINE", "2499.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
-("Aspirine", "MEMORYLINE", "1111.00", "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg");
+("Tamoul", "EPEDA", 759.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
+("Waldorf", "DREAMWAY", 809.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
+("Joris", "BULTEX", 759.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
+("Melon", "EPEDA", 1019.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
+("RevDoux", "DORSOLINE", 2499.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg"),
+("Aspirine", "MEMORYLINE", 1111.00, "https://www.convertiblecenter.fr/img/cms/Matelas-quotidien-confortable-d-une-densite-de-35kgm3-nouveau-garanti-5-ans.jpg");
 
 insert into size
 (taille)

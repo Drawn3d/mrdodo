@@ -6,13 +6,11 @@ if(isset($_GET["id"])){
 
     $queryOne = $db->prepare("DELETE FROM lit WHERE id = :id");
     $queryOne->bindParam(":id", $id, PDO::PARAM_INT);
-    if($queryOne->execute()) {
-
+    $queryOne->execute();
     $queryTwo = $db->prepare("DELETE FROM lit_size WHERE lit_id = :id");
     $queryTwo->bindParam(":id", $id, PDO::PARAM_INT);
 
         if($queryTwo->execute()){
             header("Location: index.php");
         }
-    }
 }

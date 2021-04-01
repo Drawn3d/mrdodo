@@ -64,5 +64,6 @@ include("tpl/header.php")
     </form>
 
     </div>
-</body>
-</html>
+    <?php
+include("tpl/footer.php")
+?>
