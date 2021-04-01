@@ -7,7 +7,8 @@ id smallint primary key auto_increment,
 name varchar(50) not null,
 marque varchar(50) not null,
 prix tinyint not null,
-image varchar(500) not null
+image varchar(500) not null,
+promo tinyint(3)
 );
 
 create table size(

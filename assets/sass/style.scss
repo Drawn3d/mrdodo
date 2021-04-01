@@ -1,118 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-    background-color: #0C4085;
+body {
+    background-color: #0c4085;
 }
-header{
-    text-align: center;
-    padding: 5rem;
-    .bouton{
+header {
+    img {
+        display: block;
+        margin: auto;
+    }
+    padding: 4rem 0;
+    .bouton {
         display: flex;
         justify-content: space-around;
-        a{
+        a {
+            margin-top: 3.5rem;
+            font-size: 1.5rem;
             text-decoration: none;
-            color:black;
+            color: black;
             background-color: white;
-            padding: 1rem;
-            border-radius: 30px;
+            padding: 1.5rem;
+            border-radius: 15px;
+            color: #0c4085;
+            transition: all .2s ease;
+            &:hover{
+                box-shadow: 5px 5px 5px 5px #0b3770;
+                transition: all .2s ease;
+            }
         }
     }
 }
-.container{
+.container {
     max-width: 80%;
     margin: 0 auto;
-    &-flex{
+    &-flex {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        .lit{
+        .lit {
             padding: 1rem;
             margin: 2rem 0;
             flex-basis: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 2px solid #0C4085;
-            border-radius: 5px;
-            background-color:white;
-            .clickonme{
+            border: 2px solid #0c4085;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 10px 10px 5px 5px #0b3770;
+            .marque {
+                text-transform: uppercase;
+            }
+            .prix {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+            .clickonme {
                 cursor: pointer;
             }
-            .nomMatelas{
-                display:flex;
+            .nomMatelas {
+                display: flex;
                 align-items: center;
                 flex-direction: column;
             }
-            figure{
+            .prixMatelas{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .promoPrix{
+                    color: red;
+                    font-size: 3rem;
+                }
+            }
+            
+            figure {
                 width: 30rem;
                 height: 30rem;
-                img{
+                border-radius: 10px solid white;
+                overflow: hidden;
+                img {
                     width: 100%;
                     height: 100%;
                 }
             }
-            h2{
+            h2 {
                 font-weight: 500;
             }
-            .supprimer{
+            .supprimer {
                 text-decoration: none;
                 width: 3rem;
                 height: 3rem;
                 border-radius: 3rem;
-                border: 1px solid white;
+                border: 3px solid rgb(187, 2, 2);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
-                background-color: rgb(221, 0, 0);
+                background-color: rgb(204, 0, 0);
                 font-size: 1.5rem;
                 cursor: pointer;
             }
+            h3 {
+                margin-top: 0.5rem;
+            }
         }
     }
-    .fillFormTitle{
+    .fillFormTitle {
         margin: 4rem 0;
         text-align: center;
         color: white;
     }
-    &-form{
+    &-form {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
         border: 1px solid whitesmoke;
         border-radius: 5px;
-        .form-group{
+        box-shadow: 10px 10px 5px 5px #0b3770;
+        .form-group {
             flex-basis: 35%;
             margin: 1rem;
-            padding:1rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
-            label{
+            label {
                 color: white;
                 font-size: 1.5rem;
                 margin: 1rem 0;
             }
-            input{
+            input {
                 max-width: 35rem;
                 height: 3rem;
                 border-radius: 5px;
                 border: none;
-                padding: .5rem;
+                padding: 0.5rem;
+                box-shadow: 5px 5px 5px 5px #0b3770;
             }
-            .selectLength{
+            .selectLength {
                 height: 3rem;
+                box-shadow: 5px 5px 5px 5px #0b3770;
             }
         }
     }
-    .formsubmit{
+    .formsubmit {
         display: block;
         margin: 3rem auto;
+        font-size: 1.4rem;
         width: 20rem;
         height: 3rem;
+        box-shadow: 5px 5px 5px 5px #0b3770;
     }
-
 }

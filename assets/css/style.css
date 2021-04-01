@@ -2,26 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #0C4085;
+  background-color: #0c4085;
 }
 
 header {
-  text-align: center;
-  padding: 5rem;
+  padding: 4rem 0;
+}
+header img {
+  display: block;
+  margin: auto;
 }
 header .bouton {
   display: flex;
   justify-content: space-around;
 }
 header .bouton a {
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
   background-color: white;
-  padding: 1rem;
-  border-radius: 30px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: #0c4085;
+  transition: all 0.2s ease;
+}
+header .bouton a:hover {
+  box-shadow: 5px 5px 5px 5px #0b3770;
+  transition: all 0.2s ease;
 }
 
 .container {
@@ -40,9 +52,17 @@ header .bouton a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid #0C4085;
-  border-radius: 5px;
+  border: 2px solid #0c4085;
+  border-radius: 15px;
   background-color: white;
+  box-shadow: 10px 10px 5px 5px #0b3770;
+}
+.container-flex .lit .marque {
+  text-transform: uppercase;
+}
+.container-flex .lit .prix {
+  font-weight: 700;
+  font-size: 2rem;
 }
 .container-flex .lit .clickonme {
   cursor: pointer;
@@ -52,9 +72,20 @@ header .bouton a {
   align-items: center;
   flex-direction: column;
 }
+.container-flex .lit .prixMatelas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-flex .lit .prixMatelas .promoPrix {
+  color: red;
+  font-size: 3rem;
+}
 .container-flex .lit figure {
   width: 30rem;
   height: 30rem;
+  border-radius: 10px solid white;
+  overflow: hidden;
 }
 .container-flex .lit figure img {
   width: 100%;
@@ -68,14 +99,17 @@ header .bouton a {
   width: 3rem;
   height: 3rem;
   border-radius: 3rem;
-  border: 1px solid white;
+  border: 3px solid #bb0202;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #dd0000;
+  background-color: #cc0000;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.container-flex .lit h3 {
+  margin-top: 0.5rem;
 }
 .container .fillFormTitle {
   margin: 4rem 0;
@@ -89,6 +123,7 @@ header .bouton a {
   flex-wrap: wrap;
   border: 1px solid whitesmoke;
   border-radius: 5px;
+  box-shadow: 10px 10px 5px 5px #0b3770;
 }
 .container-form .form-group {
   flex-basis: 35%;
@@ -108,15 +143,19 @@ header .bouton a {
   border-radius: 5px;
   border: none;
   padding: 0.5rem;
+  box-shadow: 5px 5px 5px 5px #0b3770;
 }
 .container-form .form-group .selectLength {
   height: 3rem;
+  box-shadow: 5px 5px 5px 5px #0b3770;
 }
 .container .formsubmit {
   display: block;
   margin: 3rem auto;
+  font-size: 1.4rem;
   width: 20rem;
   height: 3rem;
+  box-shadow: 5px 5px 5px 5px #0b3770;
 }
 
 /*# sourceMappingURL=style.css.map */

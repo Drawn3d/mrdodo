@@ -16,14 +16,17 @@ if(!empty($_POST)) {
     $mark = trim(strip_tags($_POST["mark"]));
     $price = trim(strip_tags($_POST["price"]));
     $picture = trim(strip_tags($_POST["picture"]));
+    $promo = trim(strip_tags($_POST["promo"]));
 
     $db = new PDO('mysql:host=localhost;dbname=litterie3000', "root", "");
-    $query = $db->prepare("UPDATE lit SET name = :name, marque = :mark, prix = :price, image = :picture WHERE id = :id");
+    $query = $db->prepare("UPDATE lit SET name = :name, marque = :mark, prix = :price, image = :picture, promo = :promo WHERE id = :id");
     $query->bindParam(":name", $name);
     $query->bindParam(":mark", $mark);
     $query->bindParam(":price", $price, PDO::PARAM_INT);
     $query->bindParam(":picture", $picture);
     $query->bindParam(":id", $id, PDO::PARAM_INT);
+    $query->bindParam(":promo", $promo, PDO::PARAM_INT);
+
     if($query->execute()){
         header("Location: index.php");
     }
@@ -51,6 +54,10 @@ include("tpl/header.php")
             <div class="form-group">
                 <label for="pictureMattress">Image du matelas (url)</label>
                 <input type="text" id="pictureMattress" name="picture" value="<?= $litselected["image"]?>">
+            </div>
+            <div class="form-group">
+                <label for="promoMattress">Promotion (en %)</label>
+                <input type="text" id="promoMattress" name="promo" value="<?= $litselected["promo"]?>">
             </div>
         </div>
         <input type="submit" value="Valider" class="formsubmit">
