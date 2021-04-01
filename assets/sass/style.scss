@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0C4085;
+}
+header{
+    text-align: center;
+    padding: 5rem;
+    .bouton{
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color:black;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 30px;
+        }
+    }
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    &-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .lit{
+            padding: 1rem;
+            margin: 2rem 0;
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #0C4085;
+            border-radius: 5px;
+            background-color:white;
+            .clickonme{
+                cursor: pointer;
+            }
+            .nomMatelas{
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            figure{
+                width: 30rem;
+                height: 30rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h2{
+                font-weight: 500;
+            }
+            .supprimer{
+                text-decoration: none;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 3rem;
+                border: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: rgb(221, 0, 0);
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .fillFormTitle{
+        margin: 4rem 0;
+        text-align: center;
+        color: white;
+    }
+    &-form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        .form-group{
+            flex-basis: 35%;
+            margin: 1rem;
+            padding:1rem;
+            display: flex;
+            flex-direction: column;
+            label{
+                color: white;
+                font-size: 1.5rem;
+                margin: 1rem 0;
+            }
+            input{
+                max-width: 35rem;
+                height: 3rem;
+                border-radius: 5px;
+                border: none;
+                padding: .5rem;
+            }
+            .selectLength{
+                height: 3rem;
+            }
+        }
+    }
+    .formsubmit{
+        display: block;
+        margin: 3rem auto;
+        width: 20rem;
+        height: 3rem;
+    }
+
+}
